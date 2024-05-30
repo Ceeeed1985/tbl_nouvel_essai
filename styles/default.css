@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #f1f1f1;
 }
 
 /* ================== */
@@ -59,7 +60,8 @@ header img {
   display: grid;
   grid-template-rows: 1fr 14fr;
   grid-template-columns: 4fr 6fr;
-  background-color: #f1f1f1;
+  border-left: #c5c5c6 1px solid;
+  margin-left: 15px;
 }
 
 /* ===================== */
@@ -69,10 +71,12 @@ header img {
   justify-content: flex-start;
   flex-direction: row;
   color: #16489e;
-  margin: auto;
+  margin: 10px 0;
+  padding-left: 0;
 }
 
 .main li {
+  display: inline;
   list-style-type: none;
   margin: 10px auto;
   font-weight: normal;
@@ -88,6 +92,8 @@ header img {
 
 .main li:first-child:before {
   content: "";
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .main li:hover {
