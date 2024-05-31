@@ -253,16 +253,34 @@ aside {
 /* ===========ASIDE : ligne 01========== */
 
 .aside_row_01 {
-  margin: 20px auto 0 auto;
+  margin: 20px 20px;
   width: 230px;
   height: 180px;
   overflow: hidden;
+  /* to delete */
+  position: relative;
+  display: inline-block;
 }
 
 .aside_row_01 img {
   width: 230px;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.overlay_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.15);
+}
+
+.overlay_image:hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
 }
 
 /* ===========ASIDE : ligne 02========== */
